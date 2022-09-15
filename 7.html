@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7</title>
+</head>
+<body>
+    <script>
+        var soma = 0;
+        for(var i = 1; i<=6; i++){
+            var valido = false
+            while(!valido){
+                var num = parseInt(prompt("insira a nota "+i));
+                if(num >= 0 && num <= 10){
+                    soma += num;
+                    valido = true;
+                }else{
+                    alert("nota inválida");
+                }
+            }
+        }
+        alert("media : "+soma/6);
+    </script>
+</body>
+</html>

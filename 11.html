@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11</title>
+</head>
+<body>
+    <script>
+        var dentro =0;
+        var fora =0;
+        for(var i =1; i<=10; i++){
+            var num = parseInt(prompt("insira o valor numero "+i));
+            if(num >=24 && num<=42){
+                dentro++;
+            }else{
+                fora++;
+            }
+        }
+        document.writeln("numeros dentro: "+dentro);
+        document.writeln("numeros fora: "+fora);
+    </script>
+</body>
+</html>
